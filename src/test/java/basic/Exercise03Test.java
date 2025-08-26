@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class Exercise03Test {
     @Test
-    public void Exercise03Test(){
+    public void shouldPrimeFactorization_OK(){
         final Exercise03 obj = new Exercise03();
         assertEquals("2 * 2 * 3 * 7", obj.primeFactorization(84));
         assertEquals("5 * 5 * 11", obj.primeFactorization(275));
