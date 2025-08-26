@@ -8,7 +8,7 @@ import src.main.java.basic.Exercise01;
 public class Exercise01Test {
   @Test
   public void testGcd() {
-    Exercise01 exercise = new Exercise01();
+    final Exercise01 exercise = new Exercise01();
     assertEquals(6, exercise.gcd(54, 24));
     assertEquals(1, exercise.gcd(17, 13));
     assertEquals(10, exercise.gcd(0, 10));
@@ -18,7 +18,7 @@ public class Exercise01Test {
 
   @Test
   public void testLcm() {
-    Exercise01 exercise = new Exercise01();
+    final Exercise01 exercise = new Exercise01();
     assertEquals(216, exercise.lcm(54, 24));
     assertEquals(221, exercise.lcm(17, 13));
     assertEquals(0, exercise.lcm(0, 10));
