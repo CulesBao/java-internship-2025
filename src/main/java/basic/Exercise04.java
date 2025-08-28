@@ -1,4 +1,4 @@
-package src.main.java.basic;
+package basic;
 
 public class Exercise04 {
   public String fibonacci(int n) {

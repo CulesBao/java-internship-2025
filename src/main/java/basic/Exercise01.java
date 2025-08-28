@@ -1,4 +1,4 @@
-package src.main.java.basic;
+package basic;
 
 public class Exercise01 {
   public int gcd(int x, int y) {

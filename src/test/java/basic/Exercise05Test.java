@@ -1,9 +1,8 @@
-package src.test.java.basic;
+package basic;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
-import src.main.java.basic.Exercise05;
 
 class Exercise05Test {
   @Test

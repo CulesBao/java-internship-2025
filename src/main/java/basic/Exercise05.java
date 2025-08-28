@@ -1,4 +1,4 @@
-package src.main.java.basic;
+package basic;
 
 public class Exercise05 {
   public long factorial(int n) {

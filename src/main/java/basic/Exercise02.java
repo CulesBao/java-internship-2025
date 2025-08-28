@@ -1,4 +1,4 @@
-package src.main.java.basic;
+package basic;
 
 public class Exercise02 {
   public int sumDigits(int number) {
