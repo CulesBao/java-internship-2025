@@ -7,9 +7,9 @@ Ví dụ sau minh họa cách tạo một lớp (class) và một đối tượn
 // Define a class named Car
 class Car {
     // Attributes (fields) of the class
-    String color;
-    String model;
-    int year;
+    private String color;
+    private String model;
+    private int year;
     
     // Constructor to initialize the object
     Car(String color, String model, int year) {
