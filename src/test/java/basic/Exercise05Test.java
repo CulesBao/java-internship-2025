@@ -19,7 +19,7 @@ class Exercise05Test {
   }
 
   @Test
-  public void shoudFactorial_NO() {
+  public void shoudFactorial_Throws() {
     Exercise05 exercise05 = new Exercise05();
     assertThrows(
         IllegalArgumentException.class,
