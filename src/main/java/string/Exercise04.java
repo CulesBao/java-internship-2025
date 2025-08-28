@@ -1,30 +1,24 @@
 package string;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
-
 public class Exercise04 {
   public String countAppearanceOfCharacter(final String s) {
-    String res = "";
+    if (s == null || s.isEmpty()) return "";
 
-    Map<String, Integer> map = new LinkedHashMap<>();
-    for (int i = 0; i < s.length(); i++) {
-      String key = String.valueOf(s.charAt(i));
-      if (map.containsKey(key)) {
-        map.put(key, map.get(key) + 1);
+    StringBuilder res = new StringBuilder();
+    int count = 1;
+
+    for (int i = 1; i <= s.length(); i++) {
+      if (i < s.length() && s.charAt(i) == s.charAt(i - 1)) {
+        count++;
       } else {
-        map.put(key, 1);
+        res.append(s.charAt(i - 1));
+        if (count > 1) {
+          res.append(count);
+        }
+        count = 1;
       }
     }
 
-    for (Map.Entry<String, Integer> entry : map.entrySet()) {
-      if (entry.getValue() > 1) {
-        res += entry.getKey() + entry.getValue();
-      } else {
-        res += entry.getKey();
-      }
-    }
-
-    return res;
+    return res.toString();
   }
 }

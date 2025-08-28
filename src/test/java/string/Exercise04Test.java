@@ -11,9 +11,9 @@ class Exercise04Test {
 
     assertEquals("a3b2c", exercise04.countAppearanceOfCharacter("aaabbc"));
     assertEquals("abc", exercise04.countAppearanceOfCharacter("abc"));
-    assertEquals("a4b2", exercise04.countAppearanceOfCharacter("aaaabb"));
+    assertEquals("abca", exercise04.countAppearanceOfCharacter("abca"));
     assertEquals("", exercise04.countAppearanceOfCharacter(""));
-    assertEquals("x5y3z2", exercise04.countAppearanceOfCharacter("xxxxxyyyzz"));
+    assertEquals("ab13c", exercise04.countAppearanceOfCharacter("abbbbbbbbbbbbbc"));
     assertEquals("abc4e6fd", exercise04.countAppearanceOfCharacter("abcccceeeeeefd"));
   }
 }
