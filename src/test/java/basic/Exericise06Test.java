@@ -1,14 +1,14 @@
-package src.test.java.basic;
+package basic;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
-import src.main.java.basic.Exericise06;
 
 class Exericise06Test {
   @Test
   public void shoudGetMonthName_OK() {
-    Exericise06 exericise06 = new Exericise06();
+    final Exericise06 exericise06 = new Exericise06();
+
     assertEquals("January", exericise06.getMonthName(1));
     assertEquals("February", exericise06.getMonthName(2));
     assertEquals("March", exericise06.getMonthName(3));
