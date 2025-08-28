@@ -6,7 +6,7 @@ import java.util.Map;
 public class Exercise08 {
   private static final Map<Integer, String> map = new LinkedHashMap<>();
 
-  static {
+  public Exercise08() {
     map.put(1000, "M");
     map.put(900, "CM");
     map.put(500, "D");
