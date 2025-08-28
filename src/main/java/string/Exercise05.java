@@ -11,18 +11,13 @@ public class Exercise05 {
       char ch = s.charAt(i);
       i++;
 
-      StringBuilder numBuilder = new StringBuilder();
+      int num = 0;
       while (i < s.length() && Character.isDigit(s.charAt(i))) {
-        numBuilder.append(s.charAt(i));
+        num = num * 10 + s.charAt(i) - '0';
         i++;
       }
 
-      int count = 1;
-      if (numBuilder.length() > 0) {
-        count = Integer.parseInt(numBuilder.toString());
-      }
-
-      for (int j = 0; j < count; j++) {
+      for (int j = 0; j < Math.max(num, 1); j++) {
         result.append(ch);
       }
     }
