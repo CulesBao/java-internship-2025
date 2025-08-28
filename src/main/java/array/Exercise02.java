@@ -10,7 +10,9 @@ public class Exercise02 {
 
       if (a[mid] == k) {
         return mid;
-      } else if (a[mid] < k) {
+      }
+
+      if (a[mid] < k) {
         l = mid + 1;
       } else {
         r = mid - 1;
