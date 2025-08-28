@@ -25,12 +25,14 @@ public class Exercise08 {
   public static String intToRoman(final int n) {
     StringBuilder roman = new StringBuilder();
     int num = n;
+
     for (Integer key : map.keySet()) {
       while (num >= key) {
         roman.append(map.get(key));
         num -= key;
       }
     }
+    
     return roman.toString();
   }
 }
