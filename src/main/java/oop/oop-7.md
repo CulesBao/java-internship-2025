@@ -1,6 +1,5 @@
 # Ưu điểm của Class so với Abstract class và Interface
 - Class có thể khởi tạo đối tượng trực tiếp, trong khi Abstract class và Interface không thể.
-- Class có constructor để khởi tạo các biến thành viên, trong khi Abstract class và Interface không có constructor.
 - Thuộc tính và phương thức trong class có thể được đánh dấu final, trong khi trong Interface, tất cả các phương thức mặc định là trừu tượng và không thể đánh dấu final.
 
 # Ưu điểm của Abstract class so với Class và Interface
