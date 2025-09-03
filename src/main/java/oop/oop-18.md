@@ -11,7 +11,7 @@ Design pattern (mẫu thiết kế) là các giải pháp tái sử dụng đư�
 public class Singleton {
     private static Singleton instance;
     private Singleton() {}
-    public static Singleton getInstance() {
+    public static synchronized Singleton getInstance() {
         if (instance == null) {
             instance = new Singleton();
         }
@@ -93,7 +93,7 @@ public class ConcreteObserver implements Observer {
     }
 }
 public class Subject {
-    private List<Observer> observers = new ArrayList<>();
+    private final List<Observer> observers = new ArrayList<>();
     public void subscribe(Observer observer) {
         observers.add(observer);
     }
